@@ -1,0 +1,45 @@
+/* PLACARD Chip Component */
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    height: 24px;
+    padding: 0 var(--space-2);
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--ink-2);
+    background-color: var(--surface-muted);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    user-select: none;
+    transition: all var(--ease-snappy) var(--duration-fast);
+}
+
+.chip:hover {
+    color: var(--ink);
+    border-color: var(--ink-3);
+}
+
+.chip--active {
+    background-color: var(--accent);
+    color: var(--surface);
+    border-color: var(--accent);
+}
+
+.chip--active:hover {
+    background-color: var(--accent-hover);
+    color: var(--surface);
+}
+
+.chip--color {
+    padding-left: 6px;
+}
+
+.chip__color-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: inline-block;
+}

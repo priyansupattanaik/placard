@@ -1,0 +1,99 @@
+/* PLACARD Button Component */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    line-height: 1;
+    height: 36px;
+    padding: 0 var(--space-3);
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color var(--ease-snappy) var(--duration-fast),
+                border-color var(--ease-snappy) var(--duration-fast),
+                color var(--ease-snappy) var(--duration-fast),
+                box-shadow var(--ease-snappy) var(--duration-fast);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.btn:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--accent);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Primary */
+.btn--primary {
+    background-color: var(--accent);
+    color: var(--surface);
+    border-color: var(--accent);
+}
+
+.btn--primary:hover:not(:disabled) {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
+/* Secondary */
+.btn--secondary {
+    background-color: var(--surface);
+    color: var(--ink);
+    border-color: var(--line);
+}
+
+.btn--secondary:hover:not(:disabled) {
+    background-color: var(--surface-muted);
+    border-color: var(--ink-3);
+}
+
+/* Ghost */
+.btn--ghost {
+    background-color: transparent;
+    color: var(--ink);
+    border-color: transparent;
+}
+
+.btn--ghost:hover:not(:disabled) {
+    background-color: var(--surface-muted);
+}
+
+/* Destructive */
+.btn--destructive {
+    background-color: transparent;
+    color: var(--accent-danger);
+    border-color: var(--line);
+}
+
+.btn--destructive:hover:not(:disabled) {
+    background-color: var(--accent-danger);
+    color: var(--surface);
+    border-color: var(--accent-danger);
+}
+
+/* Icon-only */
+.btn--icon {
+    width: 36px;
+    padding: 0;
+}
+
+.btn--sm {
+    height: 28px;
+    padding: 0 var(--space-2);
+    font-size: var(--text-xs);
+}
+
+.btn--lg {
+    height: 44px;
+    padding: 0 var(--space-4);
+    font-size: var(--text-base);
+}

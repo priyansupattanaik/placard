@@ -1,0 +1,12 @@
+[package]
+name = "placard-imaging"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+placard-ipc-types = { workspace = true }
+image = { workspace = true }
+blurhash = { workspace = true }
+palette = { workspace = true }
+anyhow = { workspace = true }

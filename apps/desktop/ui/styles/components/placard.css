@@ -1,0 +1,101 @@
+/* PLACARD Signature Museum Placard Component */
+.placard {
+    background-color: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    padding: var(--space-4);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    position: relative;
+    user-select: text;
+    transition: transform var(--ease-snappy) var(--duration-fast),
+                box-shadow var(--ease-snappy) var(--duration-fast);
+}
+
+.placard:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.placard__header {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.placard__title {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-style: italic;
+    font-weight: normal;
+    color: var(--ink);
+    line-height: 1.25;
+    margin: 0;
+}
+
+.placard__artist {
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--ink);
+    margin: 0;
+}
+
+.placard__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-1);
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    color: var(--ink-2);
+    line-height: 1.4;
+}
+
+.placard__separator {
+    color: var(--ink-3);
+}
+
+.placard__license-pill {
+    display: inline-block;
+    padding: 1px 5px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-2);
+    background-color: var(--surface-muted);
+}
+
+.placard__palette {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 2px;
+}
+
+.placard__palette-swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+}
+
+.placard__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--line);
+    margin-top: var(--space-1);
+}
+
+.placard__actions-group {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}

@@ -1,0 +1,15 @@
+[brand]
+name = "PLACARD"
+tagline = "The wall is the work. The interface is the label."
+bundle_id = "dev.placard.desktop"
+repo_slug = "priyansupattanaik/placard"
+repo_url = "https://github.com/priyansupattanaik/placard"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+min_window_width = 960
+min_window_height = 640
+default_theme = "system"
+default_rotation_seconds = 3600
+default_quota_bytes = 5368709120
+max_concurrent_downloads = 3
+user_agent = "PLACARD/0.1.0 (+https://github.com/priyansupattanaik/placard)"

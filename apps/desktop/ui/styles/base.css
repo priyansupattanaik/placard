@@ -1,0 +1,182 @@
+/* Component Styles */
+@import url('/styles/components/button.css');
+@import url('/styles/components/input.css');
+@import url('/styles/components/chip.css');
+@import url('/styles/components/segment.css');
+@import url('/styles/components/switch.css');
+@import url('/styles/components/sheet.css');
+@import url('/styles/components/placard.css');
+@import url('/styles/components/mat.css');
+@import url('/styles/components/sidebar.css');
+@import url('/styles/components/command_palette.css');
+
+/* Font Faces */
+@font-face {
+  font-family: 'Geist';
+  src: url('/assets/fonts/Geist-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/assets/fonts/Geist-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/assets/fonts/GeistMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/assets/fonts/GeistMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url('/assets/fonts/InstrumentSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url('/assets/fonts/InstrumentSerif-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Base Reset & Typography (Section 12.4 & 12.5) */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Focus styles (Section 12.10) */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Reduced motion (Section 12.9) */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 120ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 120ms !important;
+  }
+}
+
+/* Type scale */
+.text-micro {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+.text-caption {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+.text-body {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.text-lead {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  font-weight: 400;
+}
+
+.text-h3 {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.015em;
+  font-weight: 500;
+}
+
+.text-h2 {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.025em;
+  font-weight: 500;
+}
+
+.text-h1 {
+  font-size: 44px;
+  line-height: 46px;
+  letter-spacing: -0.035em;
+  font-weight: 500;
+}
+
+.text-display {
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.045em;
+  font-weight: 500;
+}
+
+/* Placard Typography */
+.placard-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--ink);
+}
+
+.placard-artist {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--ink-2);
+}
+
+.placard-meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}

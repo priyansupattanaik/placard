@@ -1,0 +1,59 @@
+/* PLACARD Color Tokens (Section 12.3) */
+
+:root, [data-theme="light"] {
+  --bg: #F3F0E8;
+  --surface: #EBE7DD;
+  --raised: #FAF8F3;
+  --ink: #181715;
+  --ink-2: #55514A;
+  --ink-3: #878278;
+  --line: #D8D3C7;
+  --line-strong: #BDB7A9;
+  --danger: #A8392B;
+  --ok: #4F6B4A;
+  --warn: #9A6A1F;
+  --accent: #B0532E;
+
+  /* Typography scale */
+  --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'Geist Mono', monospace;
+
+  /* Elevation & shadows */
+  --shadow-popover: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+[data-theme="dark"] {
+  --bg: #0E0E0D;
+  --surface: #151513;
+  --raised: #1C1C19;
+  --ink: #EDE9E0;
+  --ink-2: #A29D91;
+  --ink-3: #6E6A61;
+  --line: #262521;
+  --line-strong: #38362F;
+  --danger: #D9695B;
+  --ok: #8FAE88;
+  --warn: #D1A04F;
+  --accent: #B0532E;
+
+  --shadow-popover: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E0E0D;
+    --surface: #151513;
+    --raised: #1C1C19;
+    --ink: #EDE9E0;
+    --ink-2: #A29D91;
+    --ink-3: #6E6A61;
+    --line: #262521;
+    --line-strong: #38362F;
+    --danger: #D9695B;
+    --ok: #8FAE88;
+    --warn: #D1A04F;
+    --accent: #B0532E;
+    --shadow-popover: 0 8px 32px rgba(0, 0, 0, 0.5);
+  }
+}
